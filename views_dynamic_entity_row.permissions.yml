@@ -1,0 +1,4 @@
+access views dynamic entity row configs:
+  title: 'Access Views Dynamic Entity Row configs'
+  description: 'Allow access to set entity types and bundles VDER support'
+  restrict access: true
