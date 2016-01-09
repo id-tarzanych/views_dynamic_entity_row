@@ -163,6 +163,7 @@ class SettingsForm extends ConfigFormBase {
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
     parent::submitForm($form, $form_state);
+
     $config = $this->config('views_dynamic_entity_row.settings');
     $settings = $config->get('entity_types');
     if (empty($settings)) {

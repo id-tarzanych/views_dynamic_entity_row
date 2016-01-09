@@ -28,7 +28,7 @@ class DynamicViewModeTranslationLanguageRenderer extends TranslationLanguageRend
       $view_mode = $this->view->rowPlugin->options['view_mode'];
 
       if ($dynamic_view_mode = \Drupal::service('views_dynamic_entity_row.manager')->getDynamicViewMode($entity)) {
-        $view_mode =$dynamic_view_mode;
+        $view_mode = $dynamic_view_mode;
       }
 
       $this->build[$entity->id()][$langcode] = $view_builder->view($entity, $view_mode, $this->getLangcode($row));

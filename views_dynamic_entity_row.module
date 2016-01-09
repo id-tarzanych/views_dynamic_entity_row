@@ -7,7 +7,7 @@
 
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\Core\Entity\EntityFormInterface;
+use Drupal\Core\Entity\ContentEntityFormInterface;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Render\Element;
 
@@ -65,7 +65,7 @@ function views_dynamic_entity_row_entity_extra_field_info() {
  */
 function views_dynamic_entity_row_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   $form_object = $form_state->getFormObject();
-  if ($form_object instanceof EntityFormInterface) {
+  if ($form_object instanceof ContentEntityFormInterface) {
     $component = $form_object
       ->getFormDisplay($form_state)
       ->getComponent('views_dynamic_display');

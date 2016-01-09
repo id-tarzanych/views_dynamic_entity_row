@@ -24,7 +24,7 @@ views_dynamic_entity_row.settings:
         label: 'Entity Type ID'
         sequence:
           type: sequence
-          label: 'Entity ID'
+          label: 'Entity UUID'
           sequence:
             type: string
             label: 'View Mode machine name'
